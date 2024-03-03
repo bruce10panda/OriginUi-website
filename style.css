@@ -157,6 +157,11 @@ body, html {
     vertical-align: middle;
 }
 
+.footer {
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+}
+
 @media screen and (orientation: portrait) {
     /* Styles for portrait orientation (height greater than width) */
     .logo-container {
