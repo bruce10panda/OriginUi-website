@@ -156,3 +156,51 @@ body, html {
 .social-button i {
     vertical-align: middle;
 }
+
+@media screen and (orientation: portrait) {
+    /* Styles for portrait orientation (height greater than width) */
+    .logo-container {
+        width: 80%; /* Adjust the logo container width for smaller screens */
+        top: 5%; /* Adjust the top position of the logo */
+    }
+
+    .screenshot-container {
+        top: 60%; /* Adjust the top position of the screenshot container */
+        display: flex;
+        justify-content: center; /* Center the remaining screenshot */
+    }
+
+    .phone-screenshot:nth-child(2) {
+        display: none; /* Hide the second screenshot on mobile */
+    }
+
+    .section-title {
+        font-size: 40px; /* Adjust the font size of the section titles for smaller screens */
+    }
+
+    .video-container {
+        width: 80%; /* Adjust the width of the video container for smaller screens */
+    }
+
+    .image-container {
+        margin-left: 20px; /* Adjust the left margin as needed */
+        margin-right: 20px;
+    }
+
+    .custom-button {
+        width: 250px; /* Adjust the width of the custom button for smaller screens */
+        height: 100px; /* Adjust the height of the custom button for smaller screens */
+        font-size: 30px; /* Adjust the font size of the custom button for smaller screens */
+    }
+
+    .social-buttons {
+        bottom: 10px; /* Adjust the bottom position of the social buttons */
+        left: 10px; /* Adjust the left position of the social buttons */
+    }
+
+    .social-button {
+        width: 60px; /* Adjust the width of the social buttons for smaller screens */
+        height: 60px; /* Adjust the height of the social buttons for smaller screens */
+        font-size: 24px; /* Adjust the font size of the social buttons for smaller screens */
+    }
+}
