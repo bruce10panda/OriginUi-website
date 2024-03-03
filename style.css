@@ -160,6 +160,7 @@ body, html {
 .footer {
     font-family: 'Poppins', sans-serif;
     align-items: center;
+    text-align: center;
 }
 
 @media screen and (orientation: portrait) {
