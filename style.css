@@ -66,6 +66,9 @@ body, html {
     font-size: 70px;
     color: #ffffff;
     text-align: center;
+    position: absolute;
+    top: calc(50% - 20px - 45%);
+    left: 50%;
     margin-bottom: 20px;
     position: absolute;
     top: calc(50% - 20px - 45%);
@@ -116,7 +119,8 @@ body, html {
     background-color: #0085FF;
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s ease;\position: absolute;
+    transition: background-color 0.3s ease;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -183,7 +187,8 @@ body, html {
     }
 
     .video-container {
-        width: 80%;
+        width: 90%;
+        height: 30%;
     }
 
     .image-container {
