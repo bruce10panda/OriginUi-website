@@ -23,15 +23,23 @@ body, html {
 
 #section2 {
     background: linear-gradient(to bottom, rgba(253,253,253,0.7), rgba(0,132,255,0.7)), url('assets/linesbackground.png');
+    height: 115vh;
 }
 
-#section3 {
-    background: linear-gradient(to bottom, rgba(0, 132, 255, 0.7), rgba(0,132,255,0.7)), url('assets/linesbackground.png');
-    display: none;
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: 'gilroy', sans-serif;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
 }
 
-#section4 {
-    background: linear-gradient(to bottom, rgba(0,132,255,0.7), rgba(253,253,253,0.7)), url('assets/linesbackground.png');
+.footer a {
+    color: #fff;
+    text-decoration: none;
 }
 
 .logo-container {
@@ -39,13 +47,13 @@ body, html {
     top: 15%;
     left: 50%;
     transform: translateX(-50%);
-    width: 1000px;
+    width: px;
     height: auto;
 }
 
 .logo-container img {
-    width: 100%;
-    height: auto;
+    height: 183px;
+    width: auto;
 }
 
 .screenshot-container {
@@ -189,14 +197,7 @@ body, html {
     vertical-align: middle;
 }
 
-.footer {
-    font-family: 'gilroy', sans-serif;
-    align-items: center;
-    text-align: center;
-    font-weight: 500;
-}
-
-@media screen and (max-aspect-ratio: 4/3) {
+@media screen and (max-aspect-ratio: 9/10) {
     #section1 {
         height: 100vh;
     }
@@ -204,6 +205,11 @@ body, html {
     .logo-container {
         width: 80%;
         top: 15%;
+    }
+
+    .logo-container img {
+        width: 350px;
+        height: auto;
     }
 
     .screenshot-container {
@@ -247,15 +253,34 @@ body, html {
         font-size: 24px;
     }
 
-    .header {
+    .header p, .header .buttonnav  {
         display: none;
+    }
+
+    .header {
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 30px;
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        width: 60vw;
+        box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.15);
+        display: flex; /* Make header a flex container */
+        justify-content: center; /* Center children horizontally */
+        align-items: center; /* Center children vertically */
     }
 
     #section3 {
         display: block;
     }
 
-    
+    .background-wrapper {
+        background: linear-gradient(to bottom, rgba(0, 132, 255, 0.702), rgba(253, 253, 253, 0.702)), url('assets/linesbackground.png');
+        /* Add other background styles here */
+        height: 100vh; /* Ensure the wrapper fills the viewport */
+    }
 }
 
 .header {
@@ -282,10 +307,23 @@ body, html {
     font-weight: 600;
     font-size: 30px;
     float: right;
-    padding-right: 240px;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: #ffffff;
 }
 
+.header #esterOS {
+    padding-right: 240px;
+}
+
+.header #OriginUi {
+    padding-right: 20px;
+}
+
+#OriginUi:hover, #esterOS:hover {
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
 
 .buttonnav {
     width: 200px;

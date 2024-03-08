@@ -1,0 +1,363 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    color: white;
+    font-size: 24px;
+    
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+}
+
+#section1 {
+    height: 115vh;
+    background: linear-gradient(to bottom, rgba(0, 132, 255, 0.702), rgba(253, 253, 253, 0.702)), url('assets/linesbackground.png');
+}
+
+#section2 {
+    background: linear-gradient(to bottom, rgba(253,253,253,0.7), rgba(0,132,255,0.7)), url('assets/linesbackground.png');
+}
+
+#section3 {
+    background: linear-gradient(to bottom, rgba(0,132,255,0.7), rgba(253,253,253,0.7)), url('assets/linesbackground.png');
+}
+
+.logo-container {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: px;
+    height: auto;
+}
+
+.logo-container img {
+    height: 183px;
+    width: auto;
+}
+
+.screenshot-container {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 60px;
+}
+
+.phone-screenshot {
+    width: auto;
+    height: 550px;
+    border-radius: 19px;
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+    font-family: 'gilroy',arial;
+    font-weight: bolder;
+    font-size: 70px;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: calc(50% - 20px - 45%);
+    left: 50%;
+    margin-bottom: 20px;
+    position: absolute;
+    top: calc(50% - 20px - 45%);
+    transform: translate(-50%, 0);
+    z-index: 1;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.video-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.image-container {
+    margin-left: 140px;
+    margin-top: 280px;
+}
+
+.image-container img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.custom-button {
+    width: 370px;
+    height: 150px;
+    font-family: 'gilroy',arial;
+    font-weight: bold;
+    font-size: 60px;
+    border: none;
+    border-radius: 30px;
+    background-color: #0085FF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.15);
+}
+
+.custom-button:hover {
+    background-color: #005FCC;
+}
+
+.supportbutton {
+    width: 270px;
+    height: 120px;
+    font-size: 30px;
+    font-family: 'gilroy',arial;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    background-color: #0085FF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.15);
+}
+
+.supportbutton:hover {
+    background-color: #005FCC;
+}
+
+.social-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.social-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: rgba(30, 174, 254, 0.5);
+    color: white;
+    font-size: 40px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.15);
+}
+
+.social-button:hover {
+    background-color: rgba(30, 174, 254, 0.7);
+}
+
+
+.social-button i {
+    vertical-align: middle;
+}
+
+.footer {
+    font-family: 'gilroy', sans-serif;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+}
+
+@media screen and (max-aspect-ratio: 9/10) {
+    #section1 {
+        height: 100vh;
+    }
+
+    .logo-container {
+        width: 80%;
+        top: 15%;
+    }
+
+    .logo-container img {
+        width: 350px;
+        height: auto;
+    }
+
+    .screenshot-container {
+        top: 60%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .phone-screenshot:nth-child(2) {
+        display: none;
+    }
+
+    .section-title {
+        font-size: 40px;
+    }
+
+    .video-container {
+        width: 90%;
+        height: 30%;
+    }
+
+    .image-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .custom-button {
+        width: 250px;
+        height: 100px;
+        font-size: 30px;
+    }
+
+    .social-buttons {
+        bottom: 10px;
+        left: 10px;
+    }
+
+    .social-button {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    .header p, .header .buttonnav  {
+        display: none;
+    }
+
+    .header {
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 30px;
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        width: 60vw;
+        box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.15);
+        display: flex; /* Make header a flex container */
+        justify-content: center; /* Center children horizontally */
+        align-items: center; /* Center children vertically */
+    }
+
+    .background-wrapper {
+        background: linear-gradient(to bottom, rgba(0, 132, 255, 0.702), rgba(253, 253, 253, 0.702)), url('assets/linesbackground.png');
+        /* Add other background styles here */
+        height: 100vh; /* Ensure the wrapper fills the viewport */
+    }
+}
+
+.header {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 75vw;
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.15);
+}
+
+.headerimage {
+    padding: 15px;
+    height: 70px;
+    float: left;
+    padding-left: 20px;
+}
+
+.header p {
+    font-family: 'gilroy',arial;
+    font-weight: 600;
+    font-size: 30px;
+    float: right;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header #esterOS {
+    padding-right: 240px;
+}
+
+.header #OriginUi {
+    padding-right: 20px;
+}
+
+#OriginUi:hover, #esterOS:hover {
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.buttonnav {
+    width: 200px;
+    height: 70px;
+    font-family: 'gilroy',arial;
+    font-weight: bold;
+    font-size: 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: #0085FF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.15);
+}
+
+.buttonnav:hover {
+    background-color: #005FCC;
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url(assets/font/Gilroy-Black.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url(assets/font/Gilroy-Bold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url(assets/font/Gilroy-Heavy.ttf);
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url(assets/font/Gilroy-Medium.ttf);
+    font-weight: 500;
+}
