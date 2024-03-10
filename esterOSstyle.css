@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    scrollbar-color: #021830 #010d1af8;
 }
 
 .section {
@@ -18,15 +19,15 @@ body, html {
 
 #section1 {
     height: 115vh;
-    background: linear-gradient(to bottom, rgba(0, 132, 255, 0.702), rgba(253, 253, 253, 0.702)), url('assets/linesbackground.png');
+    background: rgba(1, 13, 26, 0.973) url('assets/linesbackground.png');
 }
 
 #section2 {
-    background: linear-gradient(to bottom, rgba(253,253,253,0.7), rgba(0,132,255,0.7)), url('assets/linesbackground.png');
+    background: rgba(1, 13, 26, 0.973) url('assets/linesbackground.png');
 }
 
 #section3 {
-    background: linear-gradient(to bottom, rgba(0,132,255,0.7), rgba(253,253,253,0.7)), url('assets/linesbackground.png');
+    background: rgba(1, 13, 26, 0.973) url('assets/linesbackground.png');
 }
 
 .logo-container {
@@ -39,24 +40,24 @@ body, html {
 }
 
 .logo-container img {
-    height: 183px;
+    height: 200px;
     width: auto;
 }
 
 .screenshot-container {
     position: absolute;
-    top: 65%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     gap: 60px;
 }
 
-.phone-screenshot {
+.desktop-screenshot {
     width: auto;
     height: 550px;
     border-radius: 19px;
-    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.15);
+
 }
 
 .section-title {
@@ -115,7 +116,7 @@ body, html {
     font-size: 60px;
     border: none;
     border-radius: 30px;
-    background-color: #0085FF;
+    background-color: rgb(0, 28, 58);
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -127,7 +128,7 @@ body, html {
 }
 
 .custom-button:hover {
-    background-color: #005FCC;
+    background-color: #003572;
 }
 
 .supportbutton {
@@ -185,10 +186,22 @@ body, html {
 }
 
 .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     font-family: 'gilroy', sans-serif;
     align-items: center;
-    text-align: center;
+    text-align: right;
     font-weight: 500;
+    font-size: 20px;
+    right: 20px;
+    max-width: 50vw;
+    color: #002044;
+}
+
+.footer a {
+    color: #003572;
+    text-decoration: none;
 }
 
 @media screen and (max-aspect-ratio: 9/10) {
@@ -212,8 +225,9 @@ body, html {
         justify-content: center;
     }
 
-    .phone-screenshot:nth-child(2) {
-        display: none;
+    .desktop-screenshot {
+        width: 90vw;
+        height: auto;
     }
 
     .section-title {
@@ -247,7 +261,7 @@ body, html {
         font-size: 24px;
     }
 
-    .header p, .header .buttonnav  {
+    .buttonnav  {
         display: none;
     }
 
@@ -266,16 +280,20 @@ body, html {
         align-items: center; /* Center children vertically */
     }
 
-    .background-wrapper {
-        background: linear-gradient(to bottom, rgba(0, 132, 255, 0.702), rgba(253, 253, 253, 0.702)), url('assets/linesbackground.png');
-        /* Add other background styles here */
-        height: 100vh; /* Ensure the wrapper fills the viewport */
+    .header #OriginUi {
+        text-align: right;
+        width: 100%;
+        padding-left: 33vw;
+    }
+
+    .header #esterOS {
+        display: none;
     }
 }
 
 .header {
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: 30px;
+    background: rgba(1, 13, 26);
+    border-radius: 20px;
     position: fixed;
     top: 20px;
     left: 50%;
@@ -287,7 +305,7 @@ body, html {
 
 .headerimage {
     padding: 15px;
-    height: 70px;
+    height: 45px;
     float: left;
     padding-left: 20px;
 }
@@ -295,7 +313,7 @@ body, html {
 .header p {
     font-family: 'gilroy',arial;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 25px;
     float: right;
     text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
     text-decoration: none;
@@ -317,13 +335,13 @@ body, html {
 
 .buttonnav {
     width: 200px;
-    height: 70px;
+    height: 60px;
     font-family: 'gilroy',arial;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     border: none;
     border-radius: 15px;
-    background-color: #0085FF;
+    background-color: rgb(0, 28, 58);
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -335,7 +353,7 @@ body, html {
 }
 
 .buttonnav:hover {
-    background-color: #005FCC;
+    background-color: #003572;
 }
 
 @font-face {
